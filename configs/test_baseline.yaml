@@ -1,0 +1,12 @@
+dataset: tiered-imagenet
+dataset_args: {split: test}
+
+encoder: convnet4_21
+encoder_args: {}
+
+relation_net: relation_net
+relation_net_args: {}
+
+load: /remote-home/share/69/yuanjiakang/FSFG_Baseline_icip_51/save/Baseline_tiered_Meta_tiered-imagenet-5shot_resnet12/max-va.pth
+load_relation: /remote-home/share/69/yuanjiakang/FSFG_Baseline_icip_51/save/Baseline_tiered_Meta_tiered-imagenet-5shot_resnet12/max-va.pth
+

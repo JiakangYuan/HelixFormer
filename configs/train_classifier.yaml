@@ -1,0 +1,27 @@
+# dataset(augment): CUB_crop(new_crop)/StanfordCars(resize)/StanfordDogs(resize)
+# dataset(augment): Aircraft(resize)/nabirds(resize)/tiered-imagenet(new_crop)
+train_dataset: StanfordCars
+train_dataset_args: {split: train, augment: resize}
+fs_dataset: StanfordCars
+fs_dataset_args: {split: test}
+eval_fs_epoch: 5
+
+# dataset(n_classes): CUB_crop(100)/StanfordCars(130)/StanfordDogs(70)
+# dataset(n_classes): Aircraft(60)/nabirds(350)/tiered-imagenet(351)
+model: classifier
+model_args:
+    encoder: convnet4_21
+    encoder_args: {}
+    classifier: linear-classifier
+    classifier_args: {n_classes: 130}
+    mode: flatten
+
+
+
+batch_size: 128
+max_epoch: 100
+optimizer: sgd
+optimizer_args: {lr: 0.01, milestones: [85]}
+
+save_epoch: 5
+visualize_datasets: true
