@@ -1,4 +1,6 @@
 # HelixTransformer
+
+
 This repository contains the reference Pytorch source code for the following paper:
 
 HelixTransformer: A Cross-attention Relation Transformer for Few-shot Learning(need to add url)
@@ -68,24 +70,21 @@ python test_baseline.py
 ```
 
 ## Selected few-shot classification results
-Here we quote some performance comparisons from our paper on CUB, mini-ImageNet, tiered-ImageNet and mini-ImageNet &#8594; CUB.
+Here we quote some performance comparisons from our paper on CUB, Stanford Cars, Stanford Dogs, NABirds, Aircraft, tiered-ImageNet and CUB &#8594; NABirds.
 
 <p align="center">
-<img src="./imgs/cub_cropped.png" width="450">
+<img src="./imgs/results1.png" width="750">
 </p>
 <p align="center">
-<img src="./imgs/cub_raw.png" width="450">
+<img src="./imgs/results2.png" width="450">
 </p>
 <p align="center">
-<img src="./imgs/imagenet.png" width="750">
-</p>
-<p align="center">
-<img src="./imgs/mini2cub.png" width="525">
+<img src="./imgs/results3.png" width="450">
 </p>
 
 ## Contact
 We have tried our best to verify the correctness of our released data, code and trained model weights. 
 However, there are a large number of experiment settings, all of which have been extracted and reorganized from our original codebase. 
 There may be some undetected bugs or errors in the current release. 
-If you encounter any issues or have questions about using this code, please feel free to contact us via lt453@cornell.edu and dww78@cornell.edu.
+If you encounter any issues or have questions about using this code, please feel free to contact us via zhangb18@fudan.edu.cn and jkyuan18@fudan.edu.cn.
 
