@@ -1,5 +1,6 @@
 <div align="center">
-  <h1>HelixTransformer: A Cross-attention Relation Transformer for Few-shot Learning <br></h1>
+  <h1>Inter-object Semantic Relation Modeling for Few-Shot
+Fine-Grained Image Classification<br></h1>
 </div>
 
 <!-- <div align="center">
