@@ -5,4 +5,3 @@ from . import Cars
 from . import Aircraft
 from . import NAB
 from . import CUB_crop
-from . import tiered_imagenet

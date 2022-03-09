@@ -5,7 +5,6 @@ from . import classifier
 from . import meta_baseline
 from . import relation_net
 from . import relation_baseline
-from . import transformer
-from . import transformer_cvt
-from . import resnet_diff_block
+from . import linear_helix_transformer
+from . import conv_helix_transformer
 from . import resnet50

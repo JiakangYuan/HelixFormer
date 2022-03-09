@@ -39,7 +39,7 @@ The following datasets are used in our paper:
 - Stanford Dogs \[[Dataset Page](http://vision.stanford.edu/aditya86/ImageNetDogs/)\]
 - Stanford Cars \[[Dataset Page](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)\]
 - NABirds \[[Dateset Page](https://dl.allaboutbirds.org/nabirds)\]
-- tiered-ImageNet \[[Dataset Page](https://github.com/renmengye/few-shot-ssl-public)\]
+
 
 After setting up few-shot datasets following the steps above, the following folders will exist in your `data_path`:
 - `CUB_crop`: 100/50/50 classes for train/validation/test, using bounding-box cropped images as input
@@ -47,7 +47,7 @@ After setting up few-shot datasets following the steps above, the following fold
 - `StanfordDogs`: 70/20/30 classes for train/validation/test
 - `StanfordCars`: 130/17/49 classes for train/validation/test
 - `NABirds`: 350/66/139 classes for train/validation/test
-- `tiered-ImageNet`: 351/91/160 classes for train/validation/test, images are 84x84
+
 
 ## Train and test
 For fine-grained few-shot classification, we provide the training and inference code for both HelixTransformer and our Relation Network baseline, as they appear in the paper. 
@@ -61,19 +61,17 @@ datasets and backbone can be changed in `./configs/train_classifier.yaml`
 
 - Stage two: Meta-train HelixTransformer, run the following command line
 ```
-# conv-4 backbone
 python train_meta_helix_transformer.py
-#resnet12 backbone
-python train_meta_helix_transformer_resnet12.py
 ```
 datasets/backbone/HelixTransformer model and other configs can be changes in `./configs/train_helix_transformer.yaml`
+ 
  The trained model can be tested by running the following command line:
  ```
  python test_helix_transformer.py
  ```
  datasets/model path and other configs can be changed in `./configs/test_helix_transformer.yaml`
  
-You can also train/test our meta baseline(Relation Network) by running the following command line
+You can also train/test our meta baseline(Relation Network \[[paper](https://arxiv.org/pdf/1711.06025.pdf)\]) by running the following command line
 ```
 python train_baseline.py
 python test_baseline.py
@@ -467,4 +465,7 @@ We have tried our best to verify the correctness of our released data, code and 
 However, there are a large number of experiment settings, all of which have been extracted and reorganized from our original codebase. 
 There may be some undetected bugs or errors in the current release. 
 If you encounter any issues or have questions about using this code, please feel free to contact us via zhangb18@fudan.edu.cn and jkyuan18@fudan.edu.cn.
+
+## References
+
 
