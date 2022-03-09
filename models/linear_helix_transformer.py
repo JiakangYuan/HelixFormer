@@ -79,11 +79,11 @@ class LinearHelixTransformerBlock(nn.Module):
         atten2 = (atten2 @ v1).transpose(1,2).reshape(B, N, C)
 
         out1 = self.proj1(atten1)
-        out1 = embedding1 + out1
+        out1 = embedding1 * out1
         out1 = out1 + self.mlp1(self.norm1(out1))
 
         out2 = self.proj2(atten2)
-        out2 = embedding2 + out2
+        out2 = embedding2 * out2
         out2 = out2 + self.mlp2(self.norm2(out2))
         
         out1 = out1.transpose(-2, -1).contiguous().view(B, C, H, W)

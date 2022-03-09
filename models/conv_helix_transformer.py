@@ -186,8 +186,8 @@ class ConvCrossTransformer(nn.Module):
     def forward(self, x1, x2):
         for attn, ff in self.layers:
             temp1, temp2 = attn(x1, x2)
-            x1 = x1 + temp1
-            x2 = x2 + temp2
+            x1 = x1 * temp1
+            x2 = x2 * temp2
             temp1, temp2 = ff(x1, x2)
             x1 = temp1 + x1
             x2 = temp2 + x2
