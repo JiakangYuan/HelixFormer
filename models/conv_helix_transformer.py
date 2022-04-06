@@ -231,11 +231,11 @@ class UnidirectionalConvCrossTransformer(nn.Module):
         for attn, ff in self.layers:
             if self.unidirectional_side == 'support':
                 temp1 = attn(x1, x2)
-                x1 = x1 + temp1
+                x1 = x1 * temp1
                 x1 = ff(x1) + x1
             else:
                 temp2 = attn(x2, x1)
-                x2 = x2 + temp2
+                x2 = x2 * temp2
                 x2 = ff(x2) + x2
         return x1, x2
 

@@ -12,7 +12,7 @@ Fine-Grained Image Classification<br></h1>
 </div>
 
 <div align="center">
-  <img src="./imgs/fig1.png" width=800>
+  <img src="./imgs/ACM_motivation.png" width=800>
 </div>
 
 If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
@@ -27,7 +27,7 @@ This code requires Pytorch 1.7.1 and torchvision 0.8.2 or higher with cuda suppo
 You can create a conda environment with the correct dependencies using the following command lines:
 ```
 conda env create -f environment.yml
-conda activate (need to add env name)
+conda activate fs
 ```
 
 ## Setting up data
@@ -190,12 +190,12 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
         <td>Ours</td>
         <td>In.</td>
         <td>Conv-4</td>
-        <td>58.02±0.49</td>
-        <td>73.58±0.35</td>
-        <td>76.08±0.35</td>
-        <td>90.04±0.24</td>
-        <td>77.68±0.47</td>
-        <td>89.75±0.26</td>
+        <td>59.81±0.50</td>
+        <td>73.40±0.36</td>
+        <td>75.46±0.37</td>
+        <td>89.68±0.35</td>
+        <td>78.63±0.48</td>
+        <td>90.06±0.26</td>
     </tr>
     <tr align="center">
         <td>LSC+SSM(ACM MM-21)</td>
@@ -212,12 +212,12 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
         <td>Ours</td>
         <td>In.</td>
         <td>ResNet-12</td>
-        <td>65.55±0.49</td>
-        <td>79.51±0.35</td>
-        <td>79.07±0.42</td>
-        <td>90.42±0.15</td>
-        <td>84.71±0.41</td>
-        <td>92.66±0.17</td>
+        <td>65.92±0.49</td>
+        <td>80.65±0.36</td>
+        <td>79.40±0.43</td>
+        <td>92.26±0.15</td>
+        <td>84.51±0.41</td>
+        <td>93.11±0.19</td>
     </tr>
 </table>
 
@@ -265,7 +265,7 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
       <td>Ours</td>
       <td>In.</td>
       <td>Conv-4</td>
-      <td>76.87±0.45</td>
+      <td>79.34±0.45</td>
       <td>91.01±0.24</td>
   </tr>
   <tr align="center">
@@ -322,7 +322,7 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
       <td>In.</td>
       <td>ResNet-12</td>
       <td>81.66±0.30</td>
-      <td>91.11±0.17</td>
+      <td>91.83±0.17</td>
   </tr>
 </table>
 
@@ -371,8 +371,8 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
       <td>Ours</td>
       <td>In.</td>
       <td>Conv-4</td>
-      <td>69.49±0.57</td>
-      <td>79.35±0.40</td>
+      <td>70.37±0.57</td>
+      <td>79.80±0.40</td>
   </tr>
   <tr align="center">
       <td>ProtoNet (NIPS-17) </td>
@@ -406,8 +406,8 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
       <td>Ours</td>
       <td>In.</td>
       <td>ResNet-12</td>
-      <td>73.47±0.55</td>
-      <td>82.94±0.41</td>
+      <td>74.01±0.54</td>
+      <td>83.11±0.41</td>
   </tr>
 </table>
 
@@ -443,8 +443,8 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
     <tr align="center">
         <td>Ours</td>
         <td>Conv-4</td>
-        <td>48.58±0.47</td>
-        <td>62.04±0.42</td>
+        <td>47.87±0.47</td>
+        <td>61.47±0.41</td>
     </tr>
     <tr align="center">
         <td>Ours (Baseline)</td>
@@ -455,8 +455,8 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
     <tr align="center">
         <td>Ours</td>
         <td>ResNet-12</td>
-        <td>51.19±0.49</td>
-        <td>66.40±0.26</td>
+        <td>50.56±0.48</td>
+        <td>66.13±0.41</td>
     </tr>
 </table>
 
