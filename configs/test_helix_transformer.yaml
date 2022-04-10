@@ -13,7 +13,7 @@ trans_net_args: {dim: 64, s1_emb_dim: 64, s1_emb_kernel: 3, s1_emb_stride: 1,
                    s1_proj_kernel: 3, s1_kv_proj_stride: 1, s1_heads: 2, s1_dim_head: 64,
                    s1_depth: 1, s1_mlp_mult: 4, dropout: 0.}
 
-load: /remote-home/share/69/yuanjiakang/FSFG_Baseline_icip_51/save/AT_Meta_test_4ep_double_trans_net_cvt_2heads_StanfordCars-1shot_1.12_convnet4_21/max-va.pth
-load_relation: /remote-home/share/69/yuanjiakang/FSFG_Baseline_icip_51/save/AT_Meta_test_4ep_double_trans_net_cvt_2heads_StanfordCars-1shot_1.12_convnet4_21/max-va.pth
-load_trans: /remote-home/share/69/yuanjiakang/FSFG_Baseline_icip_51/save/AT_Meta_test_4ep_double_trans_net_cvt_2heads_StanfordCars-1shot_1.12_convnet4_21/max-va.pth
+load: /model_path/max-va.pth
+load_relation: /model_path/max-va.pth
+load_trans: /model_path/max-va.pth
 

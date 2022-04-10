@@ -1,11 +1,11 @@
 import os
 
-DEFAULT_ROOT = '/remote-home/share/69/yuanjiakang/datasets'
-# '/remote-home/yuanjiakang/datasets'
-# DEFAULT_ROOT = '/wyk/Database'
+DEFAULT_ROOT = '/path/to/datasets'
 
 
 datasets = {}
+
+
 def register(name):
     def decorator(cls):
         datasets[name] = cls

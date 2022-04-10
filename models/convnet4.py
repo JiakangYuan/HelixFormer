@@ -29,7 +29,7 @@ class ConvNet4(nn.Module):
         return x
 
 
-@register('Conv4_21')
+@register('convnet4_21')
 class CNNEncoder(nn.Module):
     def __init__(self, x_dim=3, hid_dim=64, z_dim=64):
         super(CNNEncoder, self).__init__()

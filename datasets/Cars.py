@@ -9,8 +9,7 @@ from torchvision import transforms
 from .datasets import register
 from PIL import ImageEnhance
 
-tr
-nsformtypedict=dict(Brightness=ImageEnhance.Brightness, Contrast=ImageEnhance.Contrast, Sharpness=ImageEnhance.Sharpness, Color=ImageEnhance.Color)
+transformtypedict=dict(Brightness=ImageEnhance.Brightness, Contrast=ImageEnhance.Contrast, Sharpness=ImageEnhance.Sharpness, Color=ImageEnhance.Color)
 
 
 class ImageJitter(object):
