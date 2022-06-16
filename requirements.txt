@@ -1,0 +1,14 @@
+easydict
+einops
+numpy
+pandas
+opencv-python
+pillow
+pytorch
+pyyaml
+scikit-learn
+scipy
+seaborn
+tensorboardX
+torchvision
+tqdm

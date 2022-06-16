@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>Inter-object Semantic Relation Modeling for Few-Shot
-Fine-Grained Image Classification<br></h1>
+  <h1>Learning Cross-Image Semantic Relation in Transformer for Few-Shot Fine-Grained Image Classification<br></h1>
 </div>
 
 <!-- <div align="center">
@@ -15,23 +14,23 @@ Fine-Grained Image Classification<br></h1>
   <img src="./imgs/ACM_motivation.png" width=800>
 </div>
 
-If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
-```
-@InProceedings{
-}
-```
+[//]: # (If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:)
+
+[//]: # (```)
+
+[//]: # (@InProceedings{)
+
+[//]: # (})
+
+[//]: # (```)
 
 ## Code environment
 This code requires Pytorch 1.7.1 and torchvision 0.8.2 or higher with cuda support. It has been tested on Ubuntu 18.04. 
 
-You can create a conda environment with the correct dependencies using the following command lines:
-```
-conda env create -f environment.yml
-conda activate fs
-```
+For detailed dependencies, please see our requirements.txt.
 
 ## Setting up data
-You must first specify the value of `data_path` in `config.yml`. This should be the absolute path of the folder where you plan to store all the data.
+You must first specify the value of `DEFAULT_ROOT` in `./datasets/datasets.py`. This should be the absolute path of the datasets.
 
 The following datasets are used in our paper: 
 - CUB_200_2011 \[[Dataset Page](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)\]
@@ -41,16 +40,8 @@ The following datasets are used in our paper:
 - NABirds \[[Dateset Page](https://dl.allaboutbirds.org/nabirds)\]
 
 
-After setting up few-shot datasets following the steps above, the following folders will exist in your `data_path`:
-- `CUB_crop`: 100/50/50 classes for train/validation/test, using bounding-box cropped images as input
-- `Aircraft`: 60/15/55 classes for train/validation/test
-- `StanfordDogs`: 70/20/30 classes for train/validation/test
-- `StanfordCars`: 130/17/49 classes for train/validation/test
-- `NABirds`: 350/66/139 classes for train/validation/test
-
-
-## Train and test
-For fine-grained few-shot classification, we provide the training and inference code for both HelixTransformer and our Relation Network baseline, as they appear in the paper. 
+## Train and Test
+For fine-grained few-shot classification, we provide the training and inference code for both HelixFormer and our Relation Network baseline, as they appear in the paper. 
 
 Training a model can be simply divided into two stages: 
 - Stage one: Pretraining backbone, run the following command line
@@ -59,9 +50,9 @@ python train_classifier.py
 ```
 datasets and backbone can be changed in `./configs/train_classifier.yaml`
 
-- Stage two: Meta-train HelixTransformer, run the following command line
+- Stage two: Meta-train HelixFormer, run the following command line
 ```
-python train_meta_helix_transformer.py
+python train_meta_helix_transformer.py 
 ```
 datasets/backbone/HelixTransformer model and other configs can be changes in `./configs/train_helix_transformer.yaml`
  
@@ -73,14 +64,17 @@ datasets/backbone/HelixTransformer model and other configs can be changes in `./
  
 You can also train/test our meta baseline(Relation Network \[[paper](https://arxiv.org/pdf/1711.06025.pdf)\]) by running the following command line
 ```
+# train
+python train_classifier.py
 python train_baseline.py
+# test
 python test_baseline.py
 ```
 
 ## Selected few-shot classification results
 Here we quote some performance comparisons from our paper on CUB, Stanford Cars, Stanford Dogs, NABirds, Aircraft and CUB &#8594; NABirds.
 
-<p align="center">performance on Stanford Cars, Stanford Dogs, NABirds</p>
+<p align="center">Performance on Stanford Cars, Stanford Dogs, NABirds</p>
 <table align="center">
     <tr align="center">
         <td rowspan="2">Method </td>
@@ -464,7 +458,7 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
 We have tried our best to verify the correctness of our released data, code and trained model weights. 
 However, there are a large number of experiment settings, all of which have been extracted and reorganized from our original codebase. 
 There may be some undetected bugs or errors in the current release. 
-If you encounter any issues or have questions about using this code, please feel free to contact us via zhangb18@fudan.edu.cn and jkyuan18@fudan.edu.cn.
+If you encounter any issues or have questions about using this code, please feel free to contact us via bo.zhangzx@gmail.com and jkyuan18@fudan.edu.cn.
 
 ## References
 
