@@ -73,7 +73,7 @@ python train_baseline.py
 python test_baseline.py
 ```
 
-## Selected few-shot classification results
+## Selected few-shot classification results and Feature Visualization
 Here we quote some performance comparisons from our paper on CUB, Stanford Cars, Stanford Dogs, NABirds, Aircraft and CUB &#8594; NABirds.
 
 <p align="center"><b>Table 1. Performance on Stanford Cars, Stanford Dogs, NABirds</b></p>
@@ -455,6 +455,12 @@ Here we quote some performance comparisons from our paper on CUB, Stanford Cars,
         <td>66.13±0.41</td>
     </tr>
 </table>
+
+<p align="center"><b>Feature Visualization</b></p>
+<div align="center">
+  <img src="./imgs/ACM_vis_5.jpg" width=800>
+</div>
+
 
 ## Contact
 We have tried our best to verify the correctness of our released data, code and trained model weights. 
