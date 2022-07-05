@@ -17,10 +17,6 @@
  If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
 
  ```
-
-[comment]: <> ( @InProceedings{)
-
-[comment]: <> ( })
 @misc{zhang2022learning,
       title={Learning Cross-Image Object Semantic Relation in Transformer for Few-Shot Fine-Grained Image Classification}, 
       author={Bo Zhang and Jiakang Yuan and Baopu Li and Tao Chen and Jiayuan Fan and Botian Shi},
@@ -29,7 +25,6 @@
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
-
  ```
 
 ## Abstract
