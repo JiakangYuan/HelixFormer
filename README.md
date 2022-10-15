@@ -14,27 +14,17 @@
   <img src="./imgs/ACM_framework1.jpg" width=800>
 </div>
 
-[comment]: <> ( If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:)
+If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
 
-[comment]: <> ( ```)
-
-[comment]: <> (@misc{zhang2022learning,)
-
-[comment]: <> (      title={Learning Cross-Image Object Semantic Relation in Transformer for Few-Shot Fine-Grained Image Classification}, )
-
-[comment]: <> (      author={Bo Zhang and Jiakang Yuan and Baopu Li and Tao Chen and Jiayuan Fan and Botian Shi},)
-
-[comment]: <> (      year={2022},)
-
-[comment]: <> (      eprint={2207.00784},)
-
-[comment]: <> (      archivePrefix={arXiv},)
-
-[comment]: <> (      primaryClass={cs.CV})
-
-[comment]: <> (})
-
-[comment]: <> ( ```)
+```
+@inproceedings{zhang2022learning,
+  title={Learning Cross-Image Object Semantic Relation in Transformer for Few-Shot Fine-Grained Image Classification},
+  author={Zhang, Bo and Yuan, Jiakang and Li, Baopu and Chen, Tao and Fan, Jiayuan and Shi, Botian},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={2135--2144},
+  year={2022}
+}
+```
 
 ## Abstract
 Few-shot fine-grained learning aims to classify a query image into one of a set of support categories with fine-grained differences. Although learning different objects' local differences via Deep Neural Networks has achieved success, how to exploit the query-support cross-image object semantic relations in Transformer-based architecture remains under-explored in the few-shot fine-grained scenario. In this work, we propose a Transformer-based double-helix model, namely HelixFormer, to achieve the cross-image object semantic relation mining in a bidirectional and symmetrical manner. The HelixFormer consists of two steps: 1) Relation Mining Process (RMP) across different branches, and 2) Representation Enhancement Process (REP) within each individual branch. By the designed RMP, each branch can extract fine-grained object-level Cross-image Semantic Relation Maps (CSRMs) using information from the other branch, ensuring better cross-image interaction in semantically related local object regions. Further, with the aid of CSRMs, the developed REP can strengthen the extracted features for those discovered semantically-related local regions in each branch, boosting the model's ability to distinguish subtle feature differences of fine-grained objects. Extensive experiments conducted on five public fine-grained benchmarks demonstrate that HelixFormer can effectively enhance the cross-image object semantic relation matching for recognizing fine-grained objects, achieving much better performance over most state-of-the-art methods under 1-shot and 5-shot scenarios.
